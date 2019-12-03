@@ -8,6 +8,7 @@
 /* Headerセクション */
 .header-wrapper{
     display: flex;
+    /* position: fixed; */
     justify-content: space-between;
     height: 121px;
     align-items: center;
@@ -111,9 +112,17 @@ td{
 }
 
 
+/* ボタン動作 */
+.button_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:#222222; */
+}
+
 .btn{
     display: block;
-    width: 300px;
+    width: 200px;
     margin: auto;
     padding: 21px 0;
     background-color: #ffd61a;

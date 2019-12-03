@@ -44,3 +44,30 @@ for(let i=0; i<localStorage.length; i++){
 
     $("#list").append(html);
 }
+
+// Text Clearボタンを押すとテキストがクリアされる
+$("#cleartext").on("click", function(){
+    $("#memo").html("");
+});
+
+// Listに保存されたKeyとValueの処理
+$("tr").on("dblclick", function(){
+
+    let i = $("tr").index(this);
+    const key = localStorage.key(i);
+    const value = localStorage.getItem(key);
+    console.log(value);
+    $("#memo").append(value);
+
+});
+
+$("tr").on("click", function(){
+
+    let i = $("tr").index(this);
+    console.log(i);
+    $("#rowclear").on("click", function(){
+        key = localStorage.key(i);
+        localStorage.removeItem(key);
+    });
+
+});

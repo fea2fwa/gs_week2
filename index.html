@@ -33,13 +33,11 @@
     </header>
     <!-- /#header -->
 
-    <div class="mainvisual">
+    <div class="mainvisual" style="display:none;">
       <section>
-            <div class="mainvisual" style="display:none;">
-                  <img src="img/memo.jpg" alt="メインフォト">
-                  <p class="mainvisual-text">セカイを変えるメーモを作ろう</p>
-                  <p class="mainvisual-text2">メーモ職人養成課題「メーモアカデミーTOKYO」</p>
-            </div>
+        <img src="img/memo.jpg" alt="メインフォト">
+        <p class="mainvisual-text">セカイを変えるメーモを作ろう</p>
+        <p class="mainvisual-text2">業務効率化サイト「メーモアカデミーTOKYO」</p>
       </section>
     </div>
       <!-- /.mainvisual -->
@@ -48,17 +46,28 @@
     <main style="display:none;">
       <input type="text" id="key">
       <textarea id="memo"></textarea>
-      <ul>
-          <li id="save">Save</li>
-          <li id="clear">Clear</li>
-      </ul>
+      <div>
+        <ul class="button_section">
+            <li id="save" class="btn">Save</li>
+            <li id="cleartext" class="btn">Clear Text</li>
+        </ul>
+      </div>
+
     
     <table id="list">
     <!-- ここに追加データが挿入される -->
     </table>
+    <div>
+      <ul class="button_section">
+          <li id="clear" class="btn">!!! Clear All !!!</li>
+          <li id="rowclear" class="btn">Rowclear</li>
+          <li id="move2top" class="btn">Move2top</li>
+          <li id="move2bottom" class="btn">Move2bottom</li>
+      </ul>
+    </div>
     </main>
 
-
+    
 
     <div>
           <footer class="footer text-center">
