@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>メーモアカデミー</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<body>
+  <!-- この中に記述していく -->
+  <!-- ここから下にコードを書く -->
+  <div class="wrap">
+
+    <header id="header">
+      <div class="wrapper header-wrapper">
+      <img class="logo-image" src="img/header_logo.png" alt="">
+            <nav>
+            <ul class="nav-list">
+                  <li class="nav-item"><a href="#about">About</a></li>
+                  <li class="nav-item"><a href="#course">Course</a></li>
+                  <li class="nav-item"><a href="#news">News</a></li>
+                  <li class="nav-item"><a href="#access">Access</a></li>
+                  <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+            </nav>
+      </div>
+    </header>
+    <!-- /#header -->
+
+    <div class="mainvisual">
+      <section>
+            <div class="mainvisual" style="display:none;">
+                  <img src="img/memo.jpg" alt="メインフォト">
+                  <p class="mainvisual-text">セカイを変えるメーモを作ろう</p>
+                  <p class="mainvisual-text2">メーモ職人養成課題「メーモアカデミーTOKYO」</p>
+            </div>
+      </section>
+    </div>
+      <!-- /.mainvisual -->
+
+      
+    <main style="display:none;">
+      <input type="text" id="key">
+      <textarea id="memo"></textarea>
+      <ul>
+          <li id="save">Save</li>
+          <li id="clear">Clear</li>
+      </ul>
+    
+    <table id="list">
+    <!-- ここに追加データが挿入される -->
+    </table>
+    </main>
+
+
+
+    <div>
+          <footer class="footer text-center">
+                <small class="copyrights">copyrights 2016 Cheese Academy Tokyo All Rights Reserved.</small>
+          </footer>
+    </div>
+    <!-- /#footer -->
+  </div>
+
+  <!-- ここから上にコードを書く -->
+  <!-- この中に記述していく -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

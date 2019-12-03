@@ -1,0 +1,145 @@
+/* ここから下に記載していく */
+@charset "utf-8"
+.wrapper{
+    max-width: 1366px;
+    margin: auto;
+}
+
+/* Headerセクション */
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 121px;
+    align-items: center;
+}
+
+.logo-image{
+    margin: 0 0 0 30px;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.nav-item{
+    margin: 0 50px 0 0;
+}
+
+.nav-item>a{
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #222222;
+    text-decoration: none;   
+}
+
+/* メインビジュアル */
+.mainvisual{
+    position: relative;
+    margin: 0 0 60px;
+}
+
+
+.mainvisual-text{
+    position: absolute;
+    font-size: 48px;
+    font-weight: normal;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-100%,0);
+}
+
+.mainvisual-text2{
+    position: absolute;
+    width: 800px;
+    font-size: 36px;
+    font-weight: normal;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,80%,0);
+}
+
+/* Bodyセクション */
+body{
+    background: white;
+    width: 1366px;
+    color: ;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* mainセクション */
+textarea{
+  margin: 10px 3%;
+  width: 95%;
+  height: 300px;
+  font-size:80%;
+  box-shadow: 3px 3px 3px 3px #555;
+  background-color:rgb(241, 239, 239);
+}
+#key{
+    margin:0 3%;
+    width: 95%;
+    font-size:80%;
+    background-color: #e1efff;
+    box-shadow: 3px 3px 3px 3px #555;
+}
+table{
+    margin: 20px 3%;
+    border:1px solid #8dc3f5;
+    width:96%;
+    
+}
+th{
+    width:30%;
+    font-size:24px;
+    background-color:#d0e7fc;
+    border-bottom: 1px solid #8dc3f5;
+}
+td{
+    font-size:16px;
+    background-color:rgb(241, 239, 239);
+    border-bottom: 1px solid #8dc3f5;
+}
+
+
+.btn{
+    display: block;
+    width: 300px;
+    margin: auto;
+    padding: 21px 0;
+    background-color: #ffd61a;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+  background-color: whitesmoke;
+  border-color: #ffd61a;
+  color: #ffd61a;
+}
+
+
+
+
+/* Footerセクション */
+
+.footer{
+    padding: 30px 0;
+    background-color: #707070;
+}
+
+.copyrights{
+    color: white;
+}
