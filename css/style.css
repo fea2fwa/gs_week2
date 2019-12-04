@@ -122,10 +122,10 @@ td{
 
 .btn{
     display: block;
-    width: 200px;
+    width: 120px;
     margin: auto;
     padding: 21px 0;
-    background-color: #ffd61a;
+    background-color:blue;
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -135,8 +135,12 @@ td{
 
 .btn:hover {
   background-color: whitesmoke;
-  border-color: #ffd61a;
-  color: #ffd61a;
+  border-color: blue;
+  color: blue;
+}
+
+.btn_clicked{
+    font-weight: bold;
 }
 
 

@@ -59,9 +59,13 @@ $("tr").on("dblclick", function(){
     console.log(value);
     $("#memo").append(value);
 
+    $(this).removeClass("btn_clicked");
+
 });
 
 $("tr").on("click", function(){
+
+    $(this).addClass("btn_clicked");
 
     let i = $("tr").index(this);
     console.log(i);
@@ -69,5 +73,11 @@ $("tr").on("click", function(){
         key = localStorage.key(i);
         localStorage.removeItem(key);
     });
+});
 
+// 書き込まれたListに対する処理
+$("tr").hover(function(){
+    $(this).css("color", "#FF0000");
+}, function(){
+    $(this).css("color", "#000000");
 });
