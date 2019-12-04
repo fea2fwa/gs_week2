@@ -19,6 +19,29 @@ $("#save").on("click", function(){
 
     $("#list").append(html);
 
+    document.location.reload();
+
+
+// ↓この括弧群消しちゃダメ
+});
+
+$("#save2").on("click", function(){
+
+    // jQueryで値を取る時は必ずvalを利用する。他の方法はない！
+    const key = $("#key").val();
+    const value = $("#memo").val();
+
+    // console.log(key)
+    // console.log(value)
+
+    // データを保存する
+    localStorage.setItem(key, value);
+    const html = '<tr><th>'+key+'</th><td>'+value+'</td></tr>';
+
+    $("#list").append(html);
+
+    document.location.reload();
+
 
 // ↓この括弧群消しちゃダメ
 });
@@ -26,6 +49,16 @@ $("#save").on("click", function(){
 
 //2.clear クリックイベント
 $("#clear").on('click', function(){
+
+    // 保存されたデータ（localStorage)を消す
+    localStorage.clear();
+
+    //id="list"の中身を削除する
+    $("#list").empty();
+
+});
+
+$("#clear2").on('click', function(){
 
     // 保存されたデータ（localStorage)を消す
     localStorage.clear();
@@ -50,7 +83,13 @@ $("#cleartext").on("click", function(){
     $("#memo").html("");
 });
 
-// Listに保存されたKeyとValueの処理
+$("#cleartext2").on("click", function(){
+    $("#memo").html("");
+});
+
+
+// Listに保存されたデータの処理パート
+// ダブルクリックで保存した情報をテキストエリアに復活
 $("tr").on("dblclick", function(){
 
     let i = $("tr").index(this);
@@ -60,17 +99,21 @@ $("tr").on("dblclick", function(){
     $("#memo").append(value);
 
     $(this).removeClass("btn_clicked");
-
 });
 
+// Clear Rowで1行消す処理
 $("tr").on("click", function(){
 
     $(this).addClass("btn_clicked");
 
-    let i = $("tr").index(this);
+    const i = $("tr").index(this);
     console.log(i);
+    key = localStorage.key(i);
     $("#rowclear").on("click", function(){
-        key = localStorage.key(i);
+        localStorage.removeItem(key);
+    });
+
+    $("#rowclear2").on("click", function(){
         localStorage.removeItem(key);
     });
 });

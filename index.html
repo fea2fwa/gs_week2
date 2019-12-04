@@ -17,16 +17,15 @@
   <!-- ここから下にコードを書く -->
   <div class="wrap">
 
-    <header id="header">
-      <div class="wrapper header-wrapper">
+    <header>
+      <div class="header">
       <img class="logo-image" src="img/header_logo.png" alt="">
-            <nav>
+            <nav class="navisection">
             <ul class="nav-list">
-                  <li class="nav-item"><a href="#about">About</a></li>
-                  <li class="nav-item"><a href="#course">Course</a></li>
-                  <li class="nav-item"><a href="#news">News</a></li>
-                  <li class="nav-item"><a href="#access">Access</a></li>
-                  <li class="nav-item"><a href="#contact">Contact</a></li>
+                  <li class="nav-item" id="save"><a href="#">Save</a></li>
+                  <li class="nav-item" id="rowclear"><a href="#">ClearRow</a></li>
+                  <li class="nav-item" id="cleartext"><a href="#">ClearText</a></li>
+                  <li class="nav-item" id="clear"><a href="#">!!Clear All</a></li>
             </ul>
             </nav>
       </div>
@@ -37,45 +36,37 @@
       <!-- /.mainvisual -->
 
       
-    <main style="display:none;">
-      <p>タイトル：</p>
+    <main class="main">
+      <p class="columnname">タイトル：<br></p>
       <input type="text" id="key">
-      <P>テキスト：</P>
+      <P class="columnname"><br>テキスト：</P>
       <textarea id="memo"></textarea>
-      <div>
-        <ul class="button_section">
-            <li id="save" class="btn">Save</li>
-            <li id="cleartext" class="btn">Clear Text</li>
-        </ul>
-      </div>
 
     <table id="list">
     <!-- ここに追加データが挿入される -->
     </table>
     <div>
       <ul class="button_section">
-          <li id="clear" class="btn">!!! Clear All !!!</li>
-          <li id="rowclear" class="btn">Rowclear</li>
-          <li id="move2top" class="btn">Move2top</li>
-          <li id="move2bottom" class="btn">Move2bottom</li>
+          <li id="save2" class="btn">Save</li>
+          <li id="rowclear2" class="btn">ClearRow</li>
+          <li id="cleartext2" class="btn">ClearText</li>
+          <li id="clear2" class="btn">!!Clear All</li>
       </ul>
     </div>
     </main>
 
     
-    <div class="mainvisual" style="display:none;">
+    <!-- <div class="mainvisual" style="display:none;">
       <section>
         <img src="img/memo.jpg" alt="メインフォト">
         <p class="mainvisual-text">セカイを変えるメーモを作ろう</p>
-        <p class="mainvisual-text2">業務効率化サイト「メーモアカデミーTOKYO」</p>
       </section>
-    </div>
+    </div> -->
     <div>
           <footer class="footer text-center">
-                <small class="copyrights">copyrights 2016 Cheese Academy Tokyo All Rights Reserved.</small>
+                <small class="copyrights">copyrights 2016 Memo Academy Tokyo All Rights Reserved.</small>
           </footer>
     </div>
-    <!-- /#footer -->
   </div>
 
   <!-- ここから上にコードを書く -->
