@@ -111,10 +111,12 @@ $("tr").on("click", function(){
     key = localStorage.key(i);
     $("#rowclear").on("click", function(){
         localStorage.removeItem(key);
+        document.location.reload();
     });
 
     $("#rowclear2").on("click", function(){
         localStorage.removeItem(key);
+        document.location.reload();
     });
 });
 
