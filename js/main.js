@@ -80,11 +80,11 @@ for(let i=0; i<localStorage.length; i++){
 
 // Text Clearボタンを押すとテキストがクリアされる
 $("#cleartext").on("click", function(){
-    $("#memo").html("");
+    $("#memo").val("");
 });
 
 $("#cleartext2").on("click", function(){
-    $("#memo").html("");
+    $("#memo").val("");
 });
 
 
@@ -103,6 +103,8 @@ $("tr").on("dblclick", function(){
 
 // Clear Rowで1行消す処理
 $("tr").on("click", function(){
+
+    $(".btn_clicked").removeClass("btn_clicked");
 
     $(this).addClass("btn_clicked");
 
